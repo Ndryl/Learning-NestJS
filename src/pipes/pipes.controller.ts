@@ -5,8 +5,8 @@ import { MoedaPipe } from './moeda/moeda.pipe';
 export class PipesController {
   @Post('/moeda')
   @UsePipes(MoedaPipe)
-  pipeTransforma(@Body('preco') dados: any, @Query('teste') teste: string) {
+  pipeTransforma(@Body() dados: any) {
     const { preco } = dados;
-    return `Preco obtido: ${preco}`;
+    return `Preço obtido: ${preco}`;
   }
 }
