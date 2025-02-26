@@ -1,0 +1,14 @@
+POST http://localhost:3000/middlware
+Content-Type: application/json
+
+{
+    "n": 1
+}
+###
+POST http://localhost:3000/middlware/sem
+Content-Type: application/json
+
+{
+    "n": 9
+}
+
